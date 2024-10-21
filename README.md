@@ -96,12 +96,8 @@ openssl pkcs12 -export -out radius.pfx -inkey radius.key -in radius.cer
 Enter a password for the export and remember it for later.
 
 You need to set aside **radius.pfx** and **ca.cer** for the next steps.
-
-**radius.pfx** is signed by the CA and will be automatically accepted by all Macs that have the CA installed and trusted.
-
 **ca.cer** will be deployed to all Macs that need to connect to the Wi-Fi using the Okta RADIUS agent. It will validate the RADIUS server's certificate during the Wi-Fi connection.
-
-N'hésite pas à continuer à me donner des parties à traduire !
+**radius.pfx** is signed by the CA and will be automatically accepted by all Macs that have the CA installed and trusted.
 
 ## **3. Installation of the Okta RADIUS Agent**
 
